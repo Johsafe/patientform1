@@ -1,0 +1,219 @@
+<!-- hospital booking application form for booking or more info to a hospital -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <style>
+div{
+     margin-bottom: 10px; 
+    display: inline-block;
+    color: blue;
+
+}
+div label{
+    display: block;
+    width: 300px;  
+}
+    
+
+h1{
+    text-align: center;
+    color: darkred;
+
+}
+h2{
+    text-align: center;
+    color: rgb(255, 0, 21);
+}
+    </style>
+
+    <h1>johsafe's hospital</h1>
+    <h2>patients registration form</h2>
+
+<address>
+    <P>EMAIL:<I><a href="gmail.com">johsafehospital.ac.ke</a></I></P>
+    <p>P.O.BOX 456</p>
+    <p>NAIROBI</p>
+    <P> TELEPHONE:0798764532</P>
+
+</address>
+<hr>
+<p> <strong><em> print two forms.Submit one. retain one </em></strong></p>
+<fieldset>
+    <legend><b>/*APPLICANTS PERSONAL DETAILS-APPLICANT*/</b></legend>
+    <form action="/user" method="POST"> 
+        <p> <div> 
+            <strong> <label for="name">First_Name </label></strong>
+            <input type="text" id="name" name="fname" size="30" autofocus> 
+            </div>
+            <div>
+                <strong><label for="name">Second_Name </label></strong> 
+         <input type="text" id="name" name="sname" size="30">
+        </div>
+        <div>
+            <strong><label for="name">Last_Name </label></strong>
+        <input type="text" id="name" name="lname"size="30">
+    </div>
+    <div>
+        <strong> <label for="name">Date Of Birth</label></strong>
+         <input type="date" name="Bdate">
+     </div>
+</p>
+     <p><div>
+        <strong><label for="name">ID/NO.</label> <input type="text" name="id"size="30"></div>
+        <div>
+        <strong> <label for="name">Gender.</label></strong>
+            <input list="gender" size="30" name="gender">
+             <datalist id="gender">
+            <option value="male"> male</option>
+            <option value="female"> female</option>
+            <option value="others"> others</option>
+        </datalist></div>
+        <div>
+<strong><label for="name">Needfor</label></strong>
+<input list="needfor" size="30" name="yourneed">
+<datalist id="needfor">
+    <option value="checkup"></option>
+    <option value="Colsontance"></option>
+    <option value="treatment"></option>
+    <option value="rehabilitation"></option>
+    <option value="children hospital"></option>
+</datalist>
+        </div>
+        <div>
+            <strong><label for="number">Patients Age</label></strong>
+            <input type="number" name="age" id="age" maxlength="30" min="1" max="140"></div>
+            </p>
+        <p>
+        <div>
+            <strong><label for="name">Email</label></strong>
+            <input type="email" name="email" id="email" size="30">
+        </div>
+        <div>
+            <strong><label for="number">Phone No.</label></strong>
+            <input type="tel" name="phonenumber" id="phone number" size="30">
+        </div>
+        <div>
+            <strong><label for="address">Address.</label></strong>
+            <input type="text" name="address" id="address" size="30">
+        </div>
+         <!-- <div>
+            <strong><label for="text">Physical/Visually Challenged?</label></strong>
+            <input list="choice" size="30">
+            <datalist id="choice">
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </datalist>
+        </div> -->
+        <p>
+    <div>
+        <strong><label for="name">Marital Status</label></strong>
+        <input list="status" name="status" size="30">
+        <datalist id="status">
+            <option value="single">single</option>
+            <option value="divorced">divorced</option>
+            <option value="married">married</option>
+            <option value="widowed">widowed</option>
+            <option value="separated">separated</option>
+            </datalist>
+    </div>
+    
+        <div>
+            <strong><label for="name">County</label></strong>
+            <input type="text" name="county" id="county" size="30">
+        </div>
+        <div>
+            <strong><label for="name">Constituency</label></strong>
+            <input type="text" id="constituency" name="constituency" size="30">
+        </div>
+        <div>
+            <strong><label for="name">Ward</label></strong>
+            <input type="text" name="ward" id="ward" size="30">
+        </div> 
+     </p>
+    
+</fieldset>
+
+<fieldset>
+    <legend><b>/*NEXT OF KIN DETAILS*/</b></legend>
+    <p> 
+    <div>
+        <label for="name">First_Name</label>
+        <input type="text" name="fname" id="" size="30">
+    </div>
+    <div>
+        <label for="name">Second_Name</label>
+        <input type="text" name="lname" size="30">
+    </div>
+    <div>
+        <label for="number">Phone_Number</label>
+        <input type="tel" name="phonenumber" size="30">
+    </div>
+    <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="" size="30">
+</div></p>
+<p>
+<div>
+    <label for="address">Address</label>
+    <input type="text" name="address" size="30">
+</div>
+<div>
+    <label for="relationship">Relationship</label>
+    <input type="text" name="relationship" size="30">
+</div>
+</p><hr>
+<p><b><legend>/*EMERGENCY CONTACT*/ </legend></b></p>
+<p> 
+    <div>
+        <label for="name">First_Name</label>
+        <input type="text" name="fname" id="" size="30">
+    </div>
+    <div>
+        <label for="name">Second_Name</label>
+        <input type="text" name="lname" size="30">
+    </div>
+    <div>
+        <label for="number">Phone_Number</label>
+        <input type="tel" name="phonenumber" size="30">
+    </div>
+    <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="" size="30">
+</div></p>
+<p>
+<div>
+    <label for="address">Address</label>
+    <input type="text" name="address" size="30">
+</div>
+<div>
+    <label for="relationship">Reletionship</label>
+    <input type="text" name="relationship" size="30">
+</div>
+</p>
+    
+    
+    </fieldset>
+    <fieldset>
+        <legend><b><em>/*APPOINTMENT POLICY*/</em></b></legend>
+    <P>
+        We Require 48 Hours Notice For Appointment Cancellation.Appointment changes without adequate <br> 
+        notice may be subjected to a fee of kshs:500.00 ,payable by the patient.
+    </P>
+
+    <h2>........................THANK YOU FOR YOUR COOPERATION......................</h2>
+
+    <input type="button" value="register">
+</form>
+    </fieldset>
+
+<!-- <input type="submit" value="submit"> -->
+
+
+<!-- <h3><button type="button" onclick="alert('registration succesfully')">register</button></h3> -->
+
+</body>
+</html>
